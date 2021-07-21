@@ -18,9 +18,10 @@ export const NavContainer: any = styled.div`
   }
 
   .left-links {
-    width: 20%;
+    // width: 20%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .brand-name {
@@ -61,7 +62,6 @@ export const NavContainer: any = styled.div`
           display: none;
         }
       }
-
       .cart {
         width: 25px;
         height: 25px;
@@ -71,6 +71,11 @@ export const NavContainer: any = styled.div`
         position: absolute;
         right: -15px;
         top: 0;
+      }
+    }
+    .cart-link {
+      @media screen and (max-width: 468px) {
+        display: block;
       }
     }
   }

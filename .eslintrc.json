@@ -1,4 +1,4 @@
-{
+  {
     "extends": [
       "eslint:recommended",
       "plugin:react/recommended",
@@ -12,7 +12,7 @@
       "ecmaVersion": 12,
       "sourceType": "module"
   },
-    "plugins": ["react"],
+    "plugins": ["react", "@typescript-eslint"],
     "env": {
       "browser": true,
       "jasmine": true,

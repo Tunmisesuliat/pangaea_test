@@ -31,7 +31,7 @@ const Navbar: React.FC<INavbar.IProps> = ({
           <a href="#shop">Account</a>
         </li>
         <li
-          className="link"
+          className="link cart-link"
           onKeyPress={toggleSideDrawer}
           onClick={toggleSideDrawer}
           role="presentation"

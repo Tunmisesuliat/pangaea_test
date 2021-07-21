@@ -11,9 +11,19 @@ import { GET_CURRENCIES_QUERY, GET_PRODUCTS_QUERY } from "../queries";
 const LandingPage = () => {
   const [activeCurrency, setActiveCurrency] = useState<string>("USD");
   const [currenciesOptions, setCurrenciesOptions] = useState<string[]>(["USD"]);
+  const [activeFilter, setActiveFilter] = useState<string>("All Products");
   const [sideDrawerVisibility, setSideDrawerVisibility] =
     useState<boolean>(false);
   const [cart, setCart] = useState<Record<string, number>[]>([]);
+
+  const filterOptions = [
+    "All Products",
+    "New Products",
+    "Sets",
+    "Skincare",
+    "Hair & Body Care",
+    "Accessories",
+  ];
 
   const {
     data: products,
@@ -92,6 +102,10 @@ const LandingPage = () => {
     }));
   }
 
+  const changeFilter = (e: any) => {
+    setActiveFilter(e.target.value);
+  };
+
   return (
     <>
       <Navbar
@@ -114,7 +128,11 @@ const LandingPage = () => {
         toggleSideDrawer={toggleSideDrawer}
         sideDrawerVisibility={sideDrawerVisibility}
       />
-      <MiniBanner />
+      <MiniBanner
+        filterOptions={filterOptions}
+        activeFilter={activeFilter}
+        changeFilter={changeFilter}
+      />
       <Shop
         activeCurrency={activeCurrency}
         products={products?.products}
