@@ -1,8 +1,8 @@
-import React from 'react';
-import { formatPrice } from '../../utils/helperMethods';
-import Spinner from '../Spinner';
-import { ISideDrawer } from './ISideDrawer';
-import { DrawerContainer } from './style';
+import React from "react";
+import { formatPrice } from "../../utils/helperMethods";
+import Spinner from "../Spinner";
+import { ISideDrawer } from "./ISideDrawer";
+import { DrawerContainer } from "./style";
 
 const SideDrawer: React.FC<ISideDrawer.IProps> = ({
   visible,
@@ -17,7 +17,7 @@ const SideDrawer: React.FC<ISideDrawer.IProps> = ({
   removeCartItem,
 }: ISideDrawer.IProps) => {
   return (
-    <DrawerContainer className={`${visible ? 'visible' : ''}`}>
+    <DrawerContainer className={`${visible ? "visible" : ""}`}>
       <div className="d-flex">
         <button
           className="cart-toggle-btn"
@@ -96,11 +96,11 @@ const SideDrawer: React.FC<ISideDrawer.IProps> = ({
       </div>
 
       {cart.length < 1 ? (
-        ''
+        ""
       ) : (
         <>
           {loading ? (
-            ''
+            ""
           ) : (
             <div className="check-out-section">
               <div className="subtotal">

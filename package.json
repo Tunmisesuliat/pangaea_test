@@ -60,5 +60,6 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.2"
-  }
+  },
+  "eslint.workingDirectories": ["./"]
 }

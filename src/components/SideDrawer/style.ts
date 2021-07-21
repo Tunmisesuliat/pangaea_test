@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const DrawerContainer: any = styled.div`
   position: fixed;
@@ -12,7 +12,7 @@ export const DrawerContainer: any = styled.div`
   opacity: 0;
   padding: 25px 15px;
   max-width: 100vw;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   backface-visibility: hidden;
 
   @media screen and (max-width: 768px) {
@@ -177,7 +177,7 @@ export const DrawerContainer: any = styled.div`
       }
 
       &::before {
-        content: '';
+        content: " ";
         position: absolute;
         // top: -20px;
         left: 0;

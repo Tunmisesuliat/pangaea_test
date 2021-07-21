@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const BannerContainer: any = styled.div`
   width: 80%;
   padding: 0px 50px;
   margin: 80px 0;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
 
   @media screen and (max-width: 468px) {
     padding: 0px 30px;

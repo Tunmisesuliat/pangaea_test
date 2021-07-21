@@ -1,16 +1,16 @@
-import { useQuery } from '@apollo/client';
-import React, { useEffect, useState } from 'react';
-import { useUpdateEffect } from 'react-use';
-import BackDrop from '../components/Backdrop';
-import MiniBanner from '../components/MiniBanner';
-import Navbar from '../components/Navbar';
-import Shop from '../components/Shop';
-import SideDrawer from '../components/SideDrawer';
-import { GET_CURRENCIES_QUERY, GET_PRODUCTS_QUERY } from '../queries';
+import { useQuery } from "@apollo/client";
+import React, { useEffect, useState } from "react";
+import { useUpdateEffect } from "react-use";
+import BackDrop from "../components/Backdrop";
+import MiniBanner from "../components/MiniBanner";
+import Navbar from "../components/Navbar";
+import Shop from "../components/Shop";
+import SideDrawer from "../components/SideDrawer";
+import { GET_CURRENCIES_QUERY, GET_PRODUCTS_QUERY } from "../queries";
 
 const LandingPage = () => {
-  const [activeCurrency, setActiveCurrency] = useState<string>('USD');
-  const [currenciesOptions, setCurrenciesOptions] = useState<string[]>(['USD']);
+  const [activeCurrency, setActiveCurrency] = useState<string>("USD");
+  const [currenciesOptions, setCurrenciesOptions] = useState<string[]>(["USD"]);
   const [sideDrawerVisibility, setSideDrawerVisibility] =
     useState<boolean>(false);
   const [cart, setCart] = useState<Record<string, number>[]>([]);

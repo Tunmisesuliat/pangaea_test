@@ -1,9 +1,9 @@
-import React from 'react';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import LandingPage from './pages/LandingPage';
+import React from "react";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import LandingPage from "./pages/LandingPage";
 
 const client = new ApolloClient({
-  uri: 'https://pangaea-interviews.now.sh/api/graphql',
+  uri: "https://pangaea-interviews.now.sh/api/graphql",
   cache: new InMemoryCache(),
 });
 

@@ -1,7 +1,7 @@
-import React from 'react';
-import CartIcon from '../../assets/images/cart.png';
-import { INavbar } from './INavbar';
-import { NavContainer } from './style';
+import React from "react";
+import CartIcon from "../../assets/images/cart.png";
+import { INavbar } from "./INavbar";
+import { NavContainer } from "./style";
 
 const Navbar: React.FC<INavbar.IProps> = ({
   toggleSideDrawer,

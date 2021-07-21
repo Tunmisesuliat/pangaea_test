@@ -1,5 +1,5 @@
-import React from 'react';
-import { BannerContainer } from './style';
+import React from "react";
+import { BannerContainer } from "./style";
 
 const MiniBanner = () => {
   return (

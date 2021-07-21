@@ -1,6 +1,6 @@
-import React from 'react';
-import { formatPrice } from '../../utils/helperMethods';
-import { IProductCard } from './IProductCard';
+import React from "react";
+import { formatPrice } from "../../utils/helperMethods";
+import { IProductCard } from "./IProductCard";
 
 const ProductCard: React.FC<IProductCard.IProps> = ({
   product,

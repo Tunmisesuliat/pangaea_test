@@ -1,9 +1,9 @@
-import { array, bool, func, object, string } from 'prop-types';
-import React from 'react';
-import ProductCard from '../ProductCard';
-import Spinner from '../Spinner';
-import { IShop } from './IShop';
-import { ShopContainer } from './style';
+import { array, bool, func, object, string } from "prop-types";
+import React from "react";
+import ProductCard from "../ProductCard";
+import Spinner from "../Spinner";
+import { IShop } from "./IShop";
+import { ShopContainer } from "./style";
 
 const Shop: React.FC<IShop.IProps> = ({
   products,
@@ -14,9 +14,9 @@ const Shop: React.FC<IShop.IProps> = ({
 }: IShop.IProps) => {
   return (
     <ShopContainer id="shop">
-      <div className={`products ${loading || error ? 'd-flex' : ''}`}>
+      <div className={`products ${loading || error ? "d-flex" : ""}`}>
         {error && (
-          <div className={`${error ? 'error' : ''}`}>
+          <div className={`${error ? "error" : ""}`}>
             <div>
               An Unknown Error occured!. <br /> Kindly refresh the page
             </div>

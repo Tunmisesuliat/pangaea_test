@@ -1,6 +1,6 @@
-import React from 'react';
-import { IBackDrop } from './IBackDrop';
-import { Container } from './style';
+import React from "react";
+import { IBackDrop } from "./IBackDrop";
+import { Container } from "./style";
 
 const BackDrop: React.FC<IBackDrop.IProps> = ({
   sideDrawerVisibility,

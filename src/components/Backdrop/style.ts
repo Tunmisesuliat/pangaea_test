@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container: any = styled.div`
   background: rgba(205, 209, 206, 0.8);
