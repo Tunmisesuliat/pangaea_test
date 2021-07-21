@@ -1,3 +1,5 @@
+Link to the web application - https://lumin-pangaea.herokuapp.com/
+
 Requirements and Installation
 To install and run this project you would need to have installed:
 
